@@ -14,7 +14,7 @@ class WordsFinder:
                     for p in str_punctuation:
                         if p in line:
                             line = line.replace(p, ' ')
-                    split_line = line.split(sep=' ')
+                    split_line = line.split(' ')
                     words.append(split_line)
         sorted_list = [x for y in words for x in y]
         all_words[self.file_name] = sorted_list
